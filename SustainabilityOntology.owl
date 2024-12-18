@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.sustainabilityontology.com#"
+     xml:base="http://www.sustainabilityontology.com"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.sustainabilityontology.com#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.sustainabilityontology.com#hasConsumption -->
+
+    <owl:ObjectProperty rdf:about="http://www.sustainabilityontology.com#hasConsumption">
+        <rdfs:domain rdf:resource="http://www.sustainabilityontology.com#SustainablePractice"/>
+        <rdfs:range rdf:resource="http://www.sustainabilityontology.com#EnergyConsumption"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.sustainabilityontology.com#energySaved -->
+
+    <owl:DatatypeProperty rdf:about="http://www.sustainabilityontology.com#energySaved">
+        <rdfs:domain rdf:resource="http://www.sustainabilityontology.com#EnergyConsumption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sustainabilityontology.com#waterSaved -->
+
+    <owl:DatatypeProperty rdf:about="http://www.sustainabilityontology.com#waterSaved">
+        <rdfs:domain rdf:resource="http://www.sustainabilityontology.com#WaterConsumption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.sustainabilityontology.com#CarbonFootprint -->
+
+    <owl:Class rdf:about="http://www.sustainabilityontology.com#CarbonFootprint"/>
+    
+
+
+    <!-- http://www.sustainabilityontology.com#EnergyConsumption -->
+
+    <owl:Class rdf:about="http://www.sustainabilityontology.com#EnergyConsumption"/>
+    
+
+
+    <!-- http://www.sustainabilityontology.com#EnergyEfficiency -->
+
+    <owl:Class rdf:about="http://www.sustainabilityontology.com#EnergyEfficiency"/>
+    
+
+
+    <!-- http://www.sustainabilityontology.com#SustainablePractice -->
+
+    <owl:Class rdf:about="http://www.sustainabilityontology.com#SustainablePractice"/>
+    
+
+
+    <!-- http://www.sustainabilityontology.com#WaterConsumption -->
+
+    <owl:Class rdf:about="http://www.sustainabilityontology.com#WaterConsumption"/>
+    
+
+
+    <!-- http://www.sustainabilityontology.com#WaterManagement -->
+
+    <owl:Class rdf:about="http://www.sustainabilityontology.com#WaterManagement"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.sustainabilityontology.com#LEDLighting -->
+
+    <owl:NamedIndividual rdf:about="http://www.sustainabilityontology.com#LEDLighting">
+        <rdf:type rdf:resource="http://www.sustainabilityontology.com#EnergyEfficiency"/>
+        <energySaved rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51.0</energySaved>
+        <waterSaved rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23.0</waterSaved>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sustainabilityontology.com#RainwaterHarvestingSystem -->
+
+    <owl:NamedIndividual rdf:about="http://www.sustainabilityontology.com#RainwaterHarvestingSystem">
+        <rdf:type rdf:resource="http://www.sustainabilityontology.com#WaterManagement"/>
+        <waterSaved rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70.0</waterSaved>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.sustainabilityontology.com#SolarPanels -->
+
+    <owl:NamedIndividual rdf:about="http://www.sustainabilityontology.com#SolarPanels">
+        <rdf:type rdf:resource="http://www.sustainabilityontology.com#EnergyEfficiency"/>
+        <energySaved rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70.0</energySaved>
+        <waterSaved rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</waterSaved>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
